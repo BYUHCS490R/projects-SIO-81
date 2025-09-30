@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: red;
+}
+
+p {
+    color: cadetblue;
+}
+
+#thinkcelestial {
+    color: pink;
+}
+
+.crimson {
+    color: crimson;
+}
+
+.bigger {
+    font-size: 15;
+}
+
+
+.standout {
+    font-weight: 800;
+}
