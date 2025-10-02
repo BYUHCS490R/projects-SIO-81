@@ -1,0 +1,28 @@
+body {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: #333333;
+  background-color: #f6f8f0;
+  margin: 20px;
+}
+
+.emphasis {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.deemphasis {
+  color: #a9a9a9;
+  font-style: italic;
+}
+
+#special-header {
+  color: #0275d8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+span.highlight {
+  color: #5cb85c;
+  font-weight: bold;
+}
