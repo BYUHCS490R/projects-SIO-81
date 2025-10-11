@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(181, 141, 80);
+    padding: 50px;
+    margin: 25px:
+}
+
+header h1 {
+    background-color: cadetblue;
+    border-style:solid ;
+    border-color: black;
+    border-width: 20px;
+}
+nav {
+    background-color: rgb(179, 179, 243);
+    border: 5px dashed purple rgb(84, 28, 195); 
+}
+main h1 {
+    border: 3px dotted blue;
+    width: 50%;
+    
+}
