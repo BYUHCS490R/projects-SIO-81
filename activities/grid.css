@@ -1,0 +1,24 @@
+body {
+    font-family: arial, Arial, Helvetica, sans-serif;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 10px;
+}
+
+.child {
+    background-color: aliceblue;
+}
+#wrapper {
+    display: grid;
+    grid-template-areas: 
+    "top top top"
+    "iside"
+}
+
+header {
+    grid grid-area: top;
+}
+
