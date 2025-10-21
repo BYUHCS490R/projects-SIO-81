@@ -18,7 +18,11 @@ body {
     "iside"
 }
 
-header {
-    grid grid-area: top;
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    /*flex direction: row;
+    flex-wrap: wrap*/
+    justify-content: space-evenlys;
 }
 
