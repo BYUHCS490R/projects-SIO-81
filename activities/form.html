@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML Forms</title>
+</head>
+<body>
+  <main>
+    <h1>Forms</h1>
+
+    <form action="formprocess.html" method="post" novalidate>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name">
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Password">
+      </div>
+
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="you@example.com">
+      </div>
+
+      <div>
+        <label for="website">Website</label>
+        <input id="website" name="website" type="url" placeholder="https://example.com">
+      </div>
+
+      <div>
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
+      </div>
+
+      <div>
+        <label for="search">Search</label>
+        <input id="search" name="q" type="search" placeholder="Search...">
+      </div>
+
+      <input type="hidden" name="session_id" value="abc123">
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write a message..."></textarea>
+      </div>
+
+      <div>
+        <label for="city">City</label>
+        <select id="city" name="city">
+          <option value="">Choose</option>
+          <option value="ny">New York</option>
+          <option value="la">Los Angeles</option>
+          <option value="chi">Chicago</option>
+        </select>
+      </div>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <div>
+          <label><input type="checkbox" name="pref_news" value="news"> Newsletter</label>
+        </div>
+        <div>
+          <label><input type="checkbox" name="pref_updates" value="updates"> Updates</label>
+        </div>
+
+        <div>
+          <label><input type="radio" name="contact" value="email" checked> Email</label>
+        </div>
+        <div>
+          <label><input type="radio" name="contact" value="phone"> Phone</label>
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="browser">Browser</label>
+        <input list="browsers" id="browser" name="browser" placeholder="Choose or type...">
+        <datalist id="browsers">
+          <option value="Chrome">
+          <option value="Firefox">
+          <option value="Safari">
+          <option value="Edge">
+        </datalist>
+      </div>
+
+      <div>
+        <label for="quantity">Quantity</label>
+        <input id="quantity" name="quantity" type="number" min="0" max="10" value="1">
+      </div>
+
+      <div>
+        <label for="volume">Volume</label>
+        <input id="volume" name="volume" type="range" min="0" max="100" value="50">
+      </div>
+
+      <div>
+        <label for="dob">Date</label>
+        <input id="dob" name="dob" type="date">
+      </div>
+
+      <div>
+        <label for="color">Favorite color</label>
+        <input id="color" name="favcolor" type="color" value="#2b6cb0">
+      </div>
+
+      <div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    &copy; Sioeli Foliaki 2025
+  </footer>
+</body>
+</html>
