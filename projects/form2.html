@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project - Forms</title>
+  <link rel="stylesheet" href="form2.css">
+</head>
+<body>
+
+<header>
+  <h1><strong>User Registration Form</strong></h1>
+</header>
+
+<main>
+  <form>
+    <fieldset>
+      <legend>Account Information</legend>
+
+      <div class="form-row">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <div class="form-row">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-row">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+
+      <div class="form-row">
+        <label>Gender:</label>
+        <div>
+          <label><input type="radio" name="gender" value="male"> Male</label>
+          <label><input type="radio" name="gender" value="female"> Female</label>
+          <label><input type="radio" name="gender" value="other"> Other</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="color">
+      </div>
+
+      <div class="form-row">
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+          <option value="">Select...</option>
+          <option>USA</option>
+          <option>New Zealand</option>
+          <option>Australia</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label for="bio">About You:</label>
+        <textarea id="bio" name="bio"></textarea>
+      </div>
+
+      <div class="form-row">
+        <label><input type="checkbox" name="terms" required> I agree to the terms</label>
+      </div>
+
+      <div class="form-row">
+        <label></label>
+        <button type="submit">Submit</button>
+      </div>
+
+    </fieldset>
+  </form>
+</main>
+
+<footer>
+  <p><strong>&copy; 2025 Sio Foliaki</strong></p>
+</footer>
+
+</body>
+</html>
+
