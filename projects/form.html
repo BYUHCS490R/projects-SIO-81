@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Form — Life is Like Rugby</title>
+  <link rel="stylesheet" href="form.css">
+  <script defer src="form.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand">
+        <h1>Life is Like Rugby</h1>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Life Lessons</a>
+        <a href="training.html">Training</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Sign Up for Training Updates</h1>
+      <form id="trainingForm">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age*</label>
+        <input type="number" id="age" name="age" min="10" max="100" required>
+
+        <label for="experience">Experience Level</label>
+        <select id="experience" name="experience">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+
+        <label for="message">Message / Questions</label>
+        <textarea id="message" name="message"></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+
+        <div id="responseMessage" class="form-success"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">© 2025 Sio Foliaki</footer>
+</body>
+</html>
