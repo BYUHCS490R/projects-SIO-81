@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Life is Like Rugby</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <div class="brand"><h1>Life is Like Rugby</h1></div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="lessons.html">Life Lessons</a>
+        <a href="training.html">Training</a>
+        <a href="nutrition.html">Nutrition</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Contact Me</h1>
+      <form action="contact.php" method="post">
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location">
+
+        <label for="experience">Experience Level</label>
+        <select id="experience" name="experience">
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+
+        <label for="position">Favorite Position</label>
+        <input type="text" id="position" name="position">
+
+        <label for="message">Message / Question*</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">© 2025 Sio Foliaki</footer>
+</body>
+</html>
