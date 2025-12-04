@@ -25,7 +25,7 @@ function handleFormSubmit(event) {
     }
 
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "response.json", true);
+    xhr.open("GET", "form3.json", true);
     xhr.onload = function () {
         if (xhr.status === 200) {
             const response = JSON.parse(xhr.responseText);
