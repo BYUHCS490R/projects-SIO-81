@@ -4,12 +4,20 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Life is Like Rugby</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="finalproject.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="header-inner container">
-      <div class="brand"><h1>Life is Like Rugby</h1></div>
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <h1>Life is Like Rugby</h1>
+      </div>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
       <nav class="nav">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -22,32 +30,35 @@
   </header>
 
   <main class="container">
-    <section class="section">
+    <section class="section form-card">
       <h1>Contact Me</h1>
-      <form action="contact.php" method="post">
-        <label for="name">Name*</label>
-        <input type="text" id="name" name="name" required>
+      <p>Send me a message or ask a question about rugby, training, or life lessons.</p>
 
-        <label for="email">Email*</label>
-        <input type="email" id="email" name="email" required>
+      <form action="process-form.php" method="POST">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required />
 
-        <label for="location">Location</label>
-        <input type="text" id="location" name="location">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required />
 
-        <label for="experience">Experience Level</label>
-        <select id="experience" name="experience">
-          <option>Beginner</option>
-          <option>Intermediate</option>
-          <option>Advanced</option>
+        <label for="location">Location (City/State)</label>
+        <input type="text" id="location" name="location" />
+
+        <label for="experience">Experience Level *</label>
+        <select id="experience" name="experience" required>
+          <option value="">-- Select --</option>
+          <option value="beginner">Beginner</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="advanced">Advanced</option>
         </select>
 
-        <label for="position">Favorite Position</label>
-        <input type="text" id="position" name="position">
-
-        <label for="message">Message / Question*</label>
+        <label for="message">Message / Question *</label>
         <textarea id="message" name="message" required></textarea>
 
-        <button type="submit">Send</button>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send</button>
+          <button type="reset" class="btn secondary">Clear</button>
+        </div>
       </form>
     </section>
   </main>
